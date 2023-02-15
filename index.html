@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>phil-online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js" defer></script>
+    </head>
+
+    <body style="background-color: #0d1117" onload="init()">
+        <nav class="navbar">
+            <div>
+                <a href="index.html">
+                    <img
+                        class="primary-icon"
+                        alt="Hi I'm Philipp!"
+                        src="https://raw.githubusercontent.com/phil1436/phil1436/main/imgs/HiThere.gif"
+                /></a>
+            </div>
+            <ul class="nav-list" id="navi-list">
+                <li class="list-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="list-item">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+
+        <br />
+        <br />
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <a href="https://github.com/phil1436/ownobjectscriptextension">
+                    <img
+                        class="center"
+                        alt="OwnObjectScriptExtension"
+                        src="https://raw.githubusercontent.com/phil1436/ownobjectscriptextension/master/resources/logo.png"
+                        style="width: 30%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">OwnObjectScriptExtension</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <a href="https://github.com/phil1436/owngitextension">
+                    <img
+                        class="center"
+                        alt="OwnGitExtension"
+                        src="https://raw.githubusercontent.com/phil1436/owngitextension/main/resources/logo.png"
+                        style="width: 30%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">OwnGitExtension</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <a href="https://github.com/phil1436/ownvscodeextension">
+                    <img
+                        class="center"
+                        alt="OwnVSCodeExtension"
+                        src="https://raw.githubusercontent.com/phil1436/ownvscodeextension/master/resources/logo.png"
+                        style="width: 30%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">OwnVSCodeExtension</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <a href="https://github.com/phil1436/VSCode-ObjectScript-HowTo">
+                    <img
+                        class="center"
+                        alt="VSCode-ObjectScript-HowTo"
+                        src="https://raw.githubusercontent.com/phil1436/VSCode-ObjectScript-HowTo/master/imgs/IrisXVscode.png"
+                        style="width: 50%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">VSCode-ObjectScript-HowTo</div>
+            </div>
+
+            <!-- <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <a
+                    href="https://github.com/phil1436/InterSystemsHiThereGifGenerator">
+                    <img
+                        class="center"
+                        alt="InterSystems-HiThere-GIFGenerator"
+                        src="https://raw.githubusercontent.com/phil1436/InterSystemsHiThereGifGenerator/master/resources/logo.png"
+                        style="width: 70%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">InterSystems-HiThere-GIFGenerator</div>
+            </div> -->
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <a href="https://github.com/phil1436/MTConnect-ObjectScript">
+                    <img
+                        class="center"
+                        alt="MTConnect-ObjectScript"
+                        src="https://raw.githubusercontent.com/phil1436/MTConnect-ObjectScript/master/resources/logo.png"
+                        style="width: 70%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">MTConnect-ObjectScript</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <a href="https://github.com/phil1436/node-red-contrib-iris">
+                    <img
+                        class="center"
+                        alt="node-red-contrib-iris"
+                        src="https://raw.githubusercontent.com/phil1436/node-red-contrib-iris/master/src/InterSystemsLogo.png"
+                        style="width: 70%" />
+                </a>
+                <br />
+                <br />
+                <br />
+                <div class="text">node-red-contrib-iris</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="previousSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <!-- <span class="dot" onclick="currentSlide(7)"></span> -->
+        </div>
+    </body>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('navi-list');
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active-list');
+        });
+    </script>
+</html>
