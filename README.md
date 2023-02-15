@@ -1,5 +1,9 @@
 # PhilOnline
 
-[WebHost](https://www.000webhost.com/members/website/list)
+---
 
-[WebSite](https://phil-online.000webhostapp.com/)
+[WebSite](https://phil1436.github.io/)
+
+---
+
+by [Philipp B.](https://github.com/phil1436)
