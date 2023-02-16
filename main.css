@@ -222,3 +222,37 @@ body {
     top:0;
     height: 40px;
 } */
+
+#bubble-wrapper{
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0px;
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bubble{
+    height: max(300px, 30vw);
+    width: max(300px, 30vw);
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+
+    animation: wave 2s ease-in-out infinite;
+    background: #000;
+}
+
+
+@keyframes wave {
+    from, to {
+        transform: translate(-50%, 0%);
+    }
+
+    50% {
+        transform: translate(-50%, -20%);
+    }
+}
