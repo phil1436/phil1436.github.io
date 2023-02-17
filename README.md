@@ -1,4 +1,4 @@
-<img src = "imgs/logo.png" title = "logo"/>
+<img src = "imgs/logo.png" title = "logo" width = "30%"/>
 
 # PhilOnline
 
