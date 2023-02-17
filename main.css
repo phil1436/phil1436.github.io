@@ -91,3 +91,29 @@ p {
 a:link {
     text-decoration: none;
 }
+
+#blob {
+    background-color: rgba(255, 255, 255, 0.562);
+    height: 200px;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50%, -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    filter: blur(200px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
