@@ -5,281 +5,106 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>phil-online</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <script src="main.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="main.css" />
         <link rel="icon" type="imgs/logo" href="imgs/logo.png" />
+        <script src="main.js" defer></script>
     </head>
 
-    <body style="background-color: #0d1117" onload="init()">
-        <nav class="navbar">
-            <div>
-                <a href="index.html">
-                    <img
-                        class="primary-icon"
-                        alt="Hi I'm Philipp!"
-                        src="https://raw.githubusercontent.com/phil1436/phil1436/main/imgs/HiThere.gif"
-                /></a>
-            </div>
-            <ul class="nav-list" id="navi-list">
-                <li class="list-item">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li class="list-item">
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-            <div class="menu" id="toggle-button">
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-            </div>
-        </nav>
+    <body>
+        <section>
+            <img src="imgs/left.png" id="left" />
+            <img src="imgs/right.png" id="right" />
+            <h1 id="text">phil-online</h1>
+        </section>
 
-        <br />
-        <br />
+        <!-- <div id="navbar">
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="#repos">repositories</a>
+        </div> -->
 
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-
-            <div class="container">
-                <div class="box">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 6</div>
-                        <a
-                            href="https://github.com/phil1436/ownobjectscriptextension">
-                            <img
-                                class="center"
-                                alt="OwnObjectScriptExtension"
-                                src="https://raw.githubusercontent.com/phil1436/ownobjectscriptextension/master/resources/logo.png"
-                                style="width: 30%" />
-                        </a>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="text">OwnObjectScriptExtension</div>
-                    </div>
-                    <a
-                        href="https://github.com/phil1436/ownobjectscriptextension">
-                        <div class="contentBx">
-                            <div class="content">
-                                <h2>OwnObjectScriptExtension</h2>
-                                <p>
-                                    A Visual Studio code extension that supplies
-                                    tools for InterSystems ObjectScript.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box">
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 6</div>
-                        <a href="https://github.com/phil1436/owngitextension">
-                            <img
-                                class="center"
-                                alt="OwnGitExtension"
-                                src="https://raw.githubusercontent.com/phil1436/owngitextension/main/resources/logo.png"
-                                style="width: 30%" />
-                        </a>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="text">OwnGitExtension</div>
-                    </div>
-                    <a href="https://github.com/phil1436/owngitextension">
-                        <div class="contentBx">
-                            <div class="content">
-                                <h2>OwnGitExtension</h2>
-                                <p>
-                                    A Visual Studio Code Extension that offers
-                                    tools for working with GitHub projects.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box">
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 6</div>
-                        <a
-                            href="https://github.com/phil1436/ownvscodeextension">
-                            <img
-                                class="center"
-                                alt="OwnVSCodeExtension"
-                                src="https://raw.githubusercontent.com/phil1436/ownvscodeextension/master/resources/logo.png"
-                                style="width: 30%" />
-                        </a>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="text">OwnVSCodeExtension</div>
-                    </div>
-
-                    <a href="https://github.com/phil1436/ownvscodeextension">
-                        <div class="contentBx">
-                            <div class="content">
-                                <h2>OwnVSCodeExtension</h2>
-                                <p>Providing tools for Visual Studio Code.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box">
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 6</div>
-                        <a
-                            href="https://github.com/phil1436/VSCode-ObjectScript-HowTo">
-                            <img
-                                class="center"
-                                alt="VSCode-ObjectScript-HowTo"
-                                src="https://raw.githubusercontent.com/phil1436/VSCode-ObjectScript-HowTo/master/imgs/IrisXVscode.png"
-                                style="width: 50%" />
-                        </a>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="text">VSCode-ObjectScript-HowTo</div>
-                    </div>
-
-                    <a href="https://github.com/phil1436/ownvscodeextension">
-                        <div class="contentBx">
-                            <div class="content">
-                                <h2>VSCode-ObjectScript-HowTo</h2>
-                                <p>
-                                    A brief description about using Microsoft's
-                                    Visual Studio code with InterSystems
-                                    ObjectScript.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- <div class="mySlides fade">
-                <div class="numbertext">2 / 6</div>
-                <a href="https://github.com/phil1436/owngitextension">
-                    <img
-                        class="center"
-                        alt="OwnGitExtension"
-                        src="https://raw.githubusercontent.com/phil1436/owngitextension/main/resources/logo.png"
-                        style="width: 30%" />
-                </a>
-                <br />
-                <br />
-                <br />
-                <div class="text">OwnGitExtension</div>
-            </div> -->
-
-            <!-- <div class="mySlides fade">
-                <div class="numbertext">3 / 6</div>
-                <a href="https://github.com/phil1436/ownvscodeextension">
-                    <img
-                        class="center"
-                        alt="OwnVSCodeExtension"
-                        src="https://raw.githubusercontent.com/phil1436/ownvscodeextension/master/resources/logo.png"
-                        style="width: 30%" />
-                </a>
-                <br />
-                <br />
-                <br />
-                <div class="text">OwnVSCodeExtension</div>
-            </div> -->
-
-            <!-- <div class="mySlides fade">
-                <div class="numbertext">4 / 6</div>
-                <a href="https://github.com/phil1436/VSCode-ObjectScript-HowTo">
-                    <img
-                        class="center"
-                        alt="VSCode-ObjectScript-HowTo"
-                        src="https://raw.githubusercontent.com/phil1436/VSCode-ObjectScript-HowTo/master/imgs/IrisXVscode.png"
-                        style="width: 50%" />
-                </a>
-                <br />
-                <br />
-                <br />
-                <div class="text">VSCode-ObjectScript-HowTo</div>
-            </div> -->
-
-            <!-- <div class="mySlides fade">
-                <div class="numbertext">5 / 7</div>
-                <a
-                    href="https://github.com/phil1436/InterSystemsHiThereGifGenerator">
-                    <img
-                        class="center"
-                        alt="InterSystems-HiThere-GIFGenerator"
-                        src="https://raw.githubusercontent.com/phil1436/InterSystemsHiThereGifGenerator/master/resources/logo.png"
-                        style="width: 70%" />
-                </a>
-                <br />
-                <br />
-                <br />
-                <div class="text">InterSystems-HiThere-GIFGenerator</div>
-            </div> -->
-
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 6</div>
-                <a href="https://github.com/phil1436/MTConnect-ObjectScript">
-                    <img
-                        class="center"
-                        alt="MTConnect-ObjectScript"
-                        src="https://raw.githubusercontent.com/phil1436/MTConnect-ObjectScript/master/resources/logo.png"
-                        style="width: 70%" />
-                </a>
-                <br />
-                <br />
-                <br />
-                <div class="text">MTConnect-ObjectScript</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 6</div>
-                <a href="https://github.com/phil1436/node-red-contrib-iris">
-                    <img
-                        class="center"
-                        alt="node-red-contrib-iris"
-                        src="https://raw.githubusercontent.com/phil1436/node-red-contrib-iris/master/src/InterSystemsLogo.png"
-                        style="width: 70%" />
-                </a>
-                <br />
-                <br />
-                <br />
-                <div class="text">node-red-contrib-iris</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="previousSlide()">&#10094;</a>
-            <a class="next" onclick="nextSlide()">&#10095;</a>
+        <div id="about">
+            <h2 id="text">about</h2>
+            <p>
+                inter sales engineer at
+                <a href="https://www.intersystems.com/">InterSystems</a>
+            </p>
         </div>
-        <br />
+        <div id="contact">
+            <h2 id="text">contact</h2>
+            <a href="https://github.com/phil1436">
+                <img
+                    src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
+                    alt="GitHub"
+                    height="100" />
+            </a>
+            <a href="https://www.npmjs.com/~pbonin">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png"
+                    alt="npm"
+                    height="70" />
+            </a>
+            <a href="https://community.intersystems.com/user/philipp-bonin">
+                <img
+                    src="https://community.intersystems.com/sites/all/themes/intersys/images/intersystems-logo.svg"
+                    alt="InterSystems Developer Community"
+                    height="70" />
+            </a>
+            <a
+                href="https://openexchange.intersystems.com/user/Philipp%20Bonin/eS9syvSwn8xscV5wA9MEx6lRE8">
+                <img
+                    src="https://openexchange.intersystems.com/assets/img/logo.svg"
+                    alt="InterSystems Developer Community"
+                    height="70" />
+            </a>
+        </div>
 
-        <!-- The dots/circles -->
-        <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <!-- <span class="dot" onclick="currentSlide(7)"></span> -->
+        <div id="repos">
+            <h2 id="text">repositories</h2>
+        </div>
+        <div class="repos-logo" id="ownobjectscriptextension">
+            <a href="https://github.com/phil1436/ownobjectscriptextension">
+                <img
+                    src="https://raw.githubusercontent.com/phil1436/ownobjectscriptextension/master/resources/logo.png"
+                    height="300px" />
+            </a>
+            <h3>ownobjectscriptextension</h3>
+        </div>
+
+        <div class="repos-logo" id="owngitextension">
+            <a href="https://github.com/phil1436/owngitextension">
+                <img
+                    src="https://raw.githubusercontent.com/phil1436/owngitextension/main/resources/logo.png"
+                    height="300px" />
+            </a>
+            <h3>owngitextension</h3>
+        </div>
+
+        <div class="repos-logo" id="ownvscodeextension">
+            <a href="https://github.com/phil1436/OwnVscodeExtension">
+                <img
+                    src="https://raw.githubusercontent.com/phil1436/ownvscodeextension/master/resources/logo.png"
+                    height="300px" />
+            </a>
+            <h3>ownvscodeextension</h3>
+        </div>
+
+        <div class="repos-logo" id="mtconnect-objectscript">
+            <a href="https://github.com/phil1436/MTConnect-ObjectScript">
+                <img
+                    src="https://raw.githubusercontent.com/phil1436/MTConnect-ObjectScript/master/resources/logo.png"
+                    width="500px" />
+            </a>
+            <h3>mtconnect-objectscript</h3>
+        </div>
+
+        <div class="repos-logo" id="node-red-contrib-iris">
+            <a href="https://github.com/phil1436/node-red-contrib-iris">
+                <img
+                    src="https://raw.githubusercontent.com/phil1436/node-red-contrib-iris/master/src/InterSystemsLogo.png"
+                    height="300px" />
+            </a>
+            <h3>node-red-contrib-iris</h3>
         </div>
     </body>
-
-    <script>
-        const toggleButton = document.getElementById('toggle-button');
-        const naviList = document.getElementById('navi-list');
-        toggleButton.addEventListener('click', () => {
-            naviList.classList.toggle('active-list');
-        });
-    </script>
 </html>
