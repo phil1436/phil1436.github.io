@@ -1,6 +1,8 @@
 <img src = "imgs/logo.png" title = "logo" width = "30%"/>
 
-# PhilOnline
+# phil-online
+
+A simple personal website to show my projects and stuff.
 
 ---
 
