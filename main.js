@@ -53,8 +53,12 @@ window.addEventListener('scroll', function () {
     }
 
     if (value > upperRepo + 1000) {
-        if ((value - (upperRepo + 1000)) * 0.5 > window.innerWidth / 2 - 150)
+        if ((value - (upperRepo + 1000)) * 0.5 > window.innerWidth / 2 - 150) {
+            right.style.left = window.innerWidth / 2 - 150 + 'px';
+            left.style.left = window.innerWidth / 2 - 150 + 'px';
             return;
+        }
+
         left.style.left = (value - (upperRepo + 1000)) * 0.5 + 'px';
 
         right.style.left =
@@ -73,11 +77,7 @@ window.addEventListener('scroll', function () {
 
 function showRepo(value, id, from, to) {
     let repo = document.getElementById(id);
-    /* if (value > from && value < to) {
-        repo.style.display = 'flex';
-    } else {
-        repo.style.display = 'none';
-    } */
+
     if (value > to) {
         repo.style.left = '-3000px';
         return;

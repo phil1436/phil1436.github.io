@@ -5,6 +5,8 @@
 body {
     background-color: #0a2a43;
     min-height: 25000px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 section {
     position: relative;
